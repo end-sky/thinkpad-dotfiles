@@ -1,21 +1,27 @@
-# Thinkpad Dotfiles
+# Thinkpad dotfiles
 
-## Specifically for my thinpad.
+## Specifically for my thinkpad.
 
 To install, edit configurations.nix and add experimental features, "nix-command" and "flake".
+
+## Learn experimental commands
 
 https://wiki.nixos.org/wiki/Nix_(command)
 
 https://wiki.nixos.org/wiki/Flakes
 
-Then type this
+## Install
+
+After preparing your disks, or using the graphical install, move all the nixos files to /etc/nixos
+
+After moving the files, type this:
 
 ```bash
 sudo nixos-rebuild switch
 ```
 
 After that, you can simply edit the config files, move Qtile folder to ~/.config/qtile/
-THen type
+Then type
 
 ```bash
 sudo nixos-rebuild switch --flake /etc/nixos#<your flake name>
