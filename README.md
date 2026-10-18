@@ -2,6 +2,17 @@
 
 ## Specifically for my thinkpad.
 
+## This config supports:
+
+Firmware updates (fwupd) and SSD trim
+Power management with TLP, thermald and upower, and a battery charge limit of 75–80% (the BAT0 thresholds are ThinkPad-specific and ignored if your model doesn’t support them)
+Suspend on lid close
+Touchpad (tap-to-click, natural scrolling) and TrackPoint with wheel emulation
+Bluetooth with Blueman
+Touchscreen
+Added packages: brightnessctl, playerctl, acpi, xinput and powertop
+Systemd boot (can be changed in configurations.nix)
+
 To install, edit configurations.nix and add experimental features, "nix-command" and "flake".
 
 ## Learn experimental commands
