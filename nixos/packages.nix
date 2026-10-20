@@ -9,6 +9,7 @@
     git
     xarchiver
     unrar
+    pfetch
     mullvad-vpn
     dmenu
     xwallpaper
