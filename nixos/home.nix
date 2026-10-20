@@ -22,7 +22,8 @@
       ll = "eza -lah";
     };
 	initExtra = ''
-	 pfetch
+	export PS1='\[\e[96m\]\u@\w ➤ \[\e[0m\]'
+	pfetch
 	'';
   };
 
